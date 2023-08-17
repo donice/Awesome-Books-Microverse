@@ -1,9 +1,9 @@
-import { DateTime } from "./luxon.js";
+import { DateTime } from './Luxon.js';
 
 export const displayTime = () => {
   let dt = DateTime.now();
   dt = dt.toHTTP();
-  document.getElementById("date").innerHTML = dt;
+  document.getElementById('date').innerHTML = dt;
   setTimeout(displayTime, 1000);
 };
 
